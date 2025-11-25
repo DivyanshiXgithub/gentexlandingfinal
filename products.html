@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products – Gentex Seeds</title>
+    <meta name="description" content="Explore Gentex Seeds product portfolio – hybrid cucumber, okra and fodder bajra seeds for high yield and quality.">
+    <link rel="icon" type="image/png" href="gentex-seeds-logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --main-green: #1c7c3c;
+            --dark-green: #0f4d25;
+            --soft-bg: #f5f7f9;
+            --text-main: #1f2933;
+            --text-soft: #6b7280;
+            --round-large: 18px;
+            --round-pill: 999px;
+            --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: var(--text-main);
+            background-color: #ffffff;
+        }
+
+        a { text-decoration: none; }
+
+        .section-space { padding: 4.5rem 0; }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-soft);
+            max-width: 560px;
+        }
+
+        .btn-main {
+            background-color: var(--main-green);
+            color: #fff;
+            border-radius: var(--round-pill);
+            padding: 0.7rem 1.7rem;
+            font-weight: 500;
+            border: none;
+            box-shadow: 0 12px 24px rgba(34, 197, 94, 0.45);
+        }
+
+        .btn-main:hover {
+            background-color: var(--dark-green);
+            color: #fff;
+        }
+
+        .main-navbar {
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+        }
+
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+            margin-right: 0.4rem;
+        }
+
+        .navbar-brand-text {
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .main-navbar .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-soft);
+            margin-left: 0.9rem;
+        }
+
+        .main-navbar .nav-link:hover,
+        .main-navbar .nav-link.active {
+            color: var(--main-green);
+        }
+
+        .light-section { background: var(--soft-bg); }
+
+        .card-small {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 22px;
+            background: #ffffff;
+            padding: 1.4rem 1.4rem 1.6rem;
+            box-shadow: var(--shadow-soft);
+            height: 100%;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 0.9rem;
+        }
+
+        .card-title-small {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-text-small {
+            font-size: 0.9rem;
+            color: var(--text-soft);
+            margin-bottom: 0.8rem;
+        }
+
+        .chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.4rem;
+        }
+
+        .chip-item {
+            font-size: 0.78rem;
+            padding: 0.22rem 0.7rem;
+            border-radius: var(--round-pill);
+            background: rgba(15, 118, 110, 0.08);
+            color: var(--dark-green);
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-top: 1.3rem;
+            margin-bottom: 0;
+        }
+
+        .breadcrumb a {
+            color: var(--main-green);
+        }
+
+        footer {
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.82rem;
+            color: var(--text-soft);
+            padding: 1.1rem 0;
+        }
+
+        @media (max-width: 991px) {
+            .section-space { padding: 3.4rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="gentex-seeds-logo.png" alt="Gentex Seeds logo" class="navbar-logo">
+            <span class="navbar-brand-text">Gentex Seeds</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="section-space light-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mt-3 mb-4">
+            <div>
+                <h1 class="section-title">Seed Product Portfolio</h1>
+                <p class="section-subtitle">
+                    Hybrid and OP seeds for vegetables and fodder crops. Click on any product to see full details and send an enquiry.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="cucumber.jpg" class="card-img-top" alt="Hybrid cucumber Kayon F1">
+                    <h5 class="card-title-small">Hybrid Cucumber Kayon F1</h5>
+                    <p class="card-text-small">
+                        Early hybrid with strong vigour and uniform dark green fruits suitable for open field and net house.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Early maturity</span>
+                        <span class="chip-item">High yield</span>
+                        <span class="chip-item">Good fruit uniformity</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="product-cucumber.html" class="btn btn-main w-100">View details & enquiry</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="okra.jpg" class="card-img-top" alt="Okra hybrid Sunshine 101">
+                    <h5 class="card-title-small">Okra Hybrid Sunshine 101</h5>
+                    <p class="card-text-small">
+                        Dark green tender pods, strong branching and tolerance to major okra diseases for regular picking.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Strong plants</span>
+                        <span class="chip-item">Tender pods</span>
+                        <span class="chip-item">Market preferred</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="product-okra.html" class="btn btn-main w-100">View details & enquiry</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="bajra.jpg" class="card-img-top" alt="Fodder bajra Dairy Plus">
+                    <h5 class="card-title-small">Fodder Bajra Dairy Plus</h5>
+                    <p class="card-text-small">
+                        Multi-cut fodder bajra with quick regrowth, excellent biomass and high palatability for dairy animals.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Multi-cut</span>
+                        <span class="chip-item">High biomass</span>
+                        <span class="chip-item">Dairy farms</span>
+                    </div>
+                    <div class="mt-3">
+                        <a href="product-bajra.html" class="btn btn-main w-100">View details & enquiry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>© 2025 Gentex Seeds. All rights reserved.</span>
+        <span>Website by Divyanshi Nigam</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

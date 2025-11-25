@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gentex Seeds – High Performance Seeds for Better Crops</title>
+    <meta name="description" content="Green Seeds supplies high quality vegetable, fodder and field crop seeds tested for germination, vigour and purity.">
+    <link rel="icon" type="image/png" href="gentex-seeds-logo.png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .main-logo {
+    height: 48px;
+    width: auto;
+}
+        :root {
+            --main-green: #1c7c3c;
+            --dark-green: #0f4d25;
+            --soft-bg: #f5f7f9;
+            --text-main: #1f2933;
+            --text-soft: #6b7280;
+            --round-large: 18px;
+            --round-pill: 999px;
+            --shadow-soft: 0 12px 30px rgba(15, 23, 42, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: var(--text-main);
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .section-space {
+            padding: 4.5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-soft);
+            max-width: 560px;
+        }
+
+        .btn-main {
+            background-color: var(--main-green);
+            color: #fff;
+            border-radius: var(--round-pill);
+            padding: 0.8rem 1.9rem;
+            font-weight: 500;
+            border: none;
+            box-shadow: 0 12px 24px rgba(34, 197, 94, 0.45);
+        }
+
+        .btn-main:hover {
+            background-color: var(--dark-green);
+            color: #fff;
+        }
+
+        .main-navbar {
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+        }
+
+        .navbar-brand-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ffffff, #16a34a);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-right: 0.4rem;
+        }
+
+        .navbar-brand-text {
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .main-navbar .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-soft);
+            margin-left: 0.9rem;
+        }
+
+        .main-navbar .nav-link:hover,
+        .main-navbar .nav-link.active {
+            color: var(--main-green);
+        }
+
+        .intro-section {
+            padding: 4.5rem 0 4rem;
+            background: linear-gradient(135deg, #f5fff8, #f1f5ff);
+        }
+
+        .intro-title {
+            font-size: 3rem;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
+        .intro-title span {
+            color: var(--main-green);
+        }
+
+        .intro-text {
+            color: var(--text-soft);
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            max-width: 560px;
+        }
+
+        .tag-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.9rem;
+            border-radius: var(--round-pill);
+            background: rgba(22, 163, 74, 0.08);
+            color: var(--main-green);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .intro-image-box {
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .intro-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-box {
+            background: #fff;
+            border-radius: var(--round-large);
+            padding: 1.8rem 2rem;
+            box-shadow: var(--shadow-soft);
+            font-size: 0.95rem;
+        }
+
+        .light-section {
+            background: var(--soft-bg);
+        }
+
+        .card-small {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 22px;
+            background: #ffffff;
+            padding: 1.4rem 1.4rem 1.6rem;
+            box-shadow: var(--shadow-soft);
+            height: 100%;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 0.78rem;
+            background: rgba(28, 124, 60, 0.08);
+            color: var(--main-green);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--round-pill);
+            margin-bottom: 0.4rem;
+        }
+
+        .card-title-small {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .card-text-small {
+            font-size: 0.86rem;
+            color: var(--text-soft);
+            margin-bottom: 0.7rem;
+        }
+
+        .card-link-small {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--dark-green);
+        }
+
+        .category-image,
+        .card-small img.card-img-top {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 14px;
+            margin-bottom: 0.9rem;
+        }
+
+        .chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.4rem;
+        }
+
+        .chip-item {
+            font-size: 0.75rem;
+            padding: 0.22rem 0.7rem;
+            border-radius: var(--round-pill);
+            background: rgba(15, 118, 110, 0.08);
+            color: var(--dark-green);
+        }
+
+        .blog-meta {
+            font-size: 0.8rem;
+            color: var(--text-soft);
+            margin-bottom: 0.35rem;
+        }
+
+        .contact-box {
+            background: #fff;
+            border-radius: 22px;
+            padding: 2rem 1.9rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .contact-label {
+            font-size: 0.86rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-input,
+        .contact-textarea {
+            border-radius: 0.9rem;
+            border: 1px solid #d1d5db;
+            padding: 0.65rem 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .footer-section {
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.82rem;
+            color: var(--text-soft);
+            padding: 1.1rem 0;
+        }
+
+        .back-to-top-btn {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: none;
+            background-color: #15803d;
+            color: #fff;
+            font-size: 22px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 14px 32px rgba(21, 128, 61, 0.55);
+            z-index: 40;
+        }
+
+        @media (max-width: 991px) {
+            .intro-title {
+                font-size: 2.4rem;
+            }
+
+            .section-space {
+                padding: 3.4rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg main-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#top">
+           <img src="gentex-seeds-logo.png" class="main-logo" alt="Gentex Seeds Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#intro">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="intro" class="intro-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+                <div class="tag-pill mb-3">
+                    <span>🌱 Premium Seeds</span>
+                    <span>High yield • Trusted quality</span>
+                </div>
+                <h1 class="intro-title mb-3">
+                    Grow better crops with <span>high performance seeds</span>
+                </h1>
+                <p class="intro-text">
+                    We supply carefully selected vegetable, fodder and field crop seeds
+                    designed for strong germination, healthy plants and profitable harvests.
+                </p>
+                <a href="#categories" class="btn btn-main">Explore Seed Categories</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="intro-image-box">
+                    <img src="field-main.jpg" alt="Green field image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-space">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+                <h2 class="section-title">About Our Seed Company</h2>
+                <p class="section-subtitle mb-3">
+                    We partner with growers and agri experts to offer reliable seed
+                    varieties that perform consistently in the field and in the market.
+                </p>
+                <p class="mb-3">
+                    Our portfolio covers field crops, vegetables and fodder. Each lot
+                    goes through checks for germination, moisture and purity before packing.
+                </p>
+                <p class="mb-0">
+                    Along with seeds, we share advisory on sowing dates, spacing,
+                    nutrient schedule and crop protection, helping you get maximum
+                    returns from each acre.
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <div class="about-box">
+                    <h5 class="mb-2">What makes our seeds different?</h5>
+                    <p class="mb-2">
+                        Consistent performance in demo plots and farmer fields across
+                        different regions.
+                    </p>
+                    <p class="mb-2">
+                        Varieties suitable for multiple soil types, climates and
+                        irrigation patterns.
+                    </p>
+                    <p class="mb-0">
+                        Focus on yield, tolerance and market preferred traits such as
+                        grain colour, fruit size and shelf life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="categories" class="section-space light-section">
+    <div class="container">
+        <h2 class="section-title">Our Product Categories</h2>
+        <p class="section-subtitle">
+            Seed categories designed to support vegetable growers, dairy farms
+            and field crop farmers.
+        </p>
+        <div class="row g-4 mt-4">
+            <!-- VEGETABLES -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <span class="card-tag">Vegetable Seeds</span>
+                    <h6 class="card-title-small">Fresh market vegetables</h6>
+                    <p class="card-text-small">
+                        High germination seeds for cucumber, tomato, chilli and more.
+                    </p>
+                    <img src="vegetable.jpg" alt="Vegetables" class="category-image">
+                    <a href="vegetable-seeds.html" class="card-link-small">
+                     View vegetable varieties →
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <span class="card-tag">Tomato &amp; Chilli</span>
+                    <h6 class="card-title-small">High yield solanaceous crops</h6>
+                    <p class="card-text-small">
+                        Uniform fruits with strong plant vigour and good keeping quality.
+                    </p>
+                    <img src="tomato.jpeg" alt="Tomato and chilli" class="category-image">
+                    <a href="tomato-chilli.html" class="card-link-small">
+                    Explore tomato &amp; chilli →
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <span class="card-tag">Field Crops</span>
+                    <h6 class="card-title-small">Maize, wheat and more</h6>
+                    <p class="card-text-small">
+                        Hybrid and OP seeds bred for grain yield and stability.
+                    </p>
+                    <img src="fieldcrop.jpg" alt="Field crop" class="category-image">
+                    <a href="field-crops.html" class="card-link-small">
+                    Browse field crops →
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <span class="card-tag">Fodder Seeds</span>
+                    <h6 class="card-title-small">Green fodder for dairy farms</h6>
+                    <p class="card-text-small">
+                        Sorghum, bajra and grasses with excellent biomass and palatability.
+                    </p>
+                    <img src="fodder.jpeg" alt="Fodder crop" class="category-image">
+                    <a href="fodder-seeds.html" class="card-link-small">
+                     Check fodder portfolio →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="products" class="section-space">
+    <div class="container">
+        <h2 class="section-title">Featured Seed Packs</h2>
+        <p class="section-subtitle">
+            Some of our most popular hybrid and open pollinated varieties.
+        </p>
+
+        <div class="row g-4 mt-4">
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="cucumber.jpg" alt="Cucumber seeds" class="card-img-top">
+                    <h6 class="card-title-small mt-1">Hybrid Cucumber Kayon F1</h6>
+                    <p class="card-text-small">
+                        Early, vigorous plants with uniform dark green fruits suitable
+                        for open field and protected cultivation.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Early maturity</span>
+                        <span class="chip-item">High yield</span>
+                        <span class="chip-item">Good fruit uniformity</span>
+                    </div>
+                    <a href="product-cucumber.html" class="btn btn-main mt-3 w-100">
+                        View details &amp; enquiry
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="okra.jpg" alt="Okra seeds" class="card-img-top">
+                    <h6 class="card-title-small mt-1">Okra Hybrid Sunshine 101</h6>
+                    <p class="card-text-small">
+                        Dark green tender pods with good keeping quality and
+                        tolerance to major okra diseases.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Strong plants</span>
+                        <span class="chip-item">Regular picking</span>
+                        <span class="chip-item">Farmer preferred</span>
+                    </div>
+                    <a href="product-okra.html" class="btn btn-main mt-3 w-100">
+                        View details &amp; enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- BAJRA CARD -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <img src="bajra.jpg" alt="Fodder bajra" class="card-img-top">
+                    <h6 class="card-title-small mt-1">Fodder Bajra Dairy Plus</h6>
+                    <p class="card-text-small">
+                        Multi-cut hybrid with quick regrowth, high biomass and
+                        excellent palatability for dairy animals.
+                    </p>
+                    <div class="chip-list">
+                        <span class="chip-item">Multi cut</span>
+                        <span class="chip-item">High protein</span>
+                        <span class="chip-item">Dairy farms</span>
+                    </div>
+                    <a href="product-bajra.html" class="btn btn-main mt-3 w-100">
+                        View details &amp; enquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-space light-section">
+    <div class="container">
+        <h2 class="section-title">Why Farmers Choose Us</h2>
+        <p class="section-subtitle">
+            We focus on research, quality and support so that each seed works harder in your field.
+        </p>
+        <div class="row g-4 mt-4">
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <h6 class="card-title-small">Quality control</h6>
+                    <p class="card-text-small">
+                        Each lot is checked for germination, purity and vigour before packing.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <h6 class="card-title-small">Wide portfolio</h6>
+                    <p class="card-text-small">
+                        Options for small vegetable growers and large field crop farmers.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <h6 class="card-title-small">Research based</h6>
+                    <p class="card-text-small">
+                        New hybrids are tested across locations for stable performance.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card-small">
+                    <h6 class="card-title-small">Field support</h6>
+                    <p class="card-text-small">
+                        Guidance on sowing, spacing, nutrition and crop protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="section-space">
+    <div class="container">
+        <h2 class="section-title">Latest From The Blog</h2>
+        <p class="section-subtitle">
+            Short guides to help you plan sowing windows and manage crops efficiently.
+        </p>
+        <div class="row g-4 mt-4">
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <div class="blog-meta">Crop guide • 5 min read</div>
+                    <h6 class="card-title-small">Choosing the right hybrid maize</h6>
+                    <p class="card-text-small">
+                        Understand maturity group, grain colour and disease tolerance
+                        before finalising a maize hybrid for your region.
+                    </p>
+                    <a href="#" class="card-link-small">Read more →</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <div class="blog-meta">Vegetables • 4 min read</div>
+                    <h6 class="card-title-small">Improving cucumber yield in summer</h6>
+                    <p class="card-text-small">
+                        Tips on sowing time, spacing, mulching and fertigation to get
+                        more pickings from each plant.
+                    </p>
+                    <a href="#" class="card-link-small">Read more →</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card-small">
+                    <div class="blog-meta">Fodder • 3 min read</div>
+                    <h6 class="card-title-small">Planning year-round green fodder</h6>
+                    <p class="card-text-small">
+                        Rotate sorghum, bajra and perennial grasses to keep a
+                        continuous fodder supply for your dairy animals.
+                    </p>
+                    <a href="#" class="card-link-small">Read more →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section-space light-section">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle mb-3">
+                    Have a question about our seeds or want to become a distributor?
+                    Share your details and our team will connect with you.
+                </p>
+                <p class="mb-2">
+                    <strong>Address:</strong><br>
+                    3rd Floor, Agro Business Complex,<br>
+                    Uttam Nagar, New Delhi – 110059
+                </p>
+                <p class="mb-1">
+                    <strong>Phone:</strong> +91 98765 43210
+                </p>
+                <p class="mb-0">
+                    <strong>Email:</strong> info@gentexseeds.in
+                </p>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-box">
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="contact-label" for="firstName">First name</label>
+                                <input id="firstName" class="form-control contact-input" type="text" placeholder="Enter first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="contact-label" for="lastName">Last name</label>
+                                <input id="lastName" class="form-control contact-input" type="text" placeholder="Enter last name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="contact-label" for="phone">Phone number</label>
+                                <input id="phone" class="form-control contact-input" type="tel" placeholder="+91">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="contact-label" for="email">Email</label>
+                                <input id="email" class="form-control contact-input" type="email" placeholder="you@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="contact-label" for="message">Message</label>
+                                <textarea id="message" class="form-control contact-textarea" placeholder="Tell us how we can help"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-main mt-1 w-100">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>© 2025 Gentex Seeds. All rights reserved.</span>
+        <span>Designed by Divyanshi Nigam</span>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top-btn">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const firstName = document.getElementById('firstName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!firstName || !email || !message) {
+                alert('Please fill in name, email and message.');
+                return;
+            }
+
+            alert('Thank you for reaching out. We will contact you soon.');
+            contactForm.reset();
+        });
+    }
+
+    const backBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 400) {
+            backBtn.style.display = 'flex';
+        } else {
+            backBtn.style.display = 'none';
+        }
+    });
+
+    backBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
